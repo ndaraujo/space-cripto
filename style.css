@@ -198,6 +198,10 @@ body {
         padding: 20px;
     }
     
+    .conteudo-direita-img {
+      display: none;
+    }
+    
 }
 
 
@@ -231,5 +235,9 @@ body {
         height: 186px;
         margin: 0;
 
+   }
+   
+   .conteudo-direita-img {
+     display: none;
    }
  }
