@@ -73,6 +73,7 @@ const criptografar = () => {
     }
     
     outputTextarea.value = textoCriptografado;
+    inputElement.value = textoCriptografado;
 }
 
 const descriptografar = () => {
@@ -84,7 +85,8 @@ const descriptografar = () => {
     textoDescriptografado = textoDescriptografado.replace(/ober/g, 'o');
     textoDescriptografado = textoDescriptografado.replace(/ufat/g, 'u');
 
-    outputTextarea.value = textoDescriptografado;  
+    outputTextarea.value = textoDescriptografado;
+    inputElement.value = textoDescriptografado;
 }
 
 const copiarTexto = () => {
