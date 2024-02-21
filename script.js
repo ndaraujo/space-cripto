@@ -22,7 +22,7 @@ const updateOutput = () => {
 
         if (window.innerWidth <= 800) {
             outputElement.style.height = '350px';
-        } else if (window.innerWidth <= 500) {
+        } else if (window.innerWidth <= 600) {
             outputElement.style.height = '595px';
         } else {
             outputElement.style.height = '100%';
@@ -38,7 +38,7 @@ const updateOutput = () => {
 
         if (window.innerWidth <= 800) {
             outputElement.style.height = '133px';
-        } else if (window.innerWidth <= 500) {
+        } else if (window.innerWidth <= 600) {
             outputElement.style.height = '186px';
         } else {
             outputElement.style.height = '100%';
