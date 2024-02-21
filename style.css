@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #0e0a24;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cabecalho {
+    display: flex;
+}
+
+.cabecalho-img {
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.conteudo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.conteudo-esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.conteudo-esquerda-textarea {
+   width: 80%;
+   height: 70%;
+   resize: none;
+   outline: none;
+   background-color: #0e0a24;
+   border: none;
+   color: #15F5BA;
+   font-size: 2rem;
+}
+
+.conteudo-esquerda-textarea::placeholder {
+    color: #15F5BA;
+}
+
+.conteudo-esquerda-botao-alerta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conteudo-esquerda-alerta {
+    font-size: 1rem;
+    color: #F0F3FF;
+}
+
+.conteudo-esquerda-botoes {
+    display: flex;
+    gap: 30px;
+}
+
+.conteudo-esquerda-btn-crip {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    font-size: 1rem;
+    background-color: #15F5BA;
+    color: #211951;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.conteudo-esquerda-btn-descrip {
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    font-size: 1rem;
+    background-color: #F0F3FF;
+    color: #836FFF;
+    border: 1px solid #836FFF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.conteudo-direita {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    background-color: #1f175013;
+    color: #F0F3FF;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    gap: 30px;
+
+}
+
+.conteudo-direita-img {
+    width: 70%;
+}
+
+.conteudo-direita-h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.conteudo-direita-p {
+    font-size: 1rem;
+}
+
+
+.conteudo-direita-text {
+    width: 90%;
+    height: 70%;
+    background-color: #1f175000;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: #F0F3FF;
+    display: none;
+}
+
+.conteudo-direita-btn-copiar{
+    width: 90%;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    font-size: 1rem;
+    background-color: #F0F3FF;
+    color: #836FFF;
+    border: 1px solid #836FFF;
+    font-weight: 700;
+    cursor: pointer;
+    display: none;
+}
+
+.rodape {
+    width: 100%;
+    text-align: center;
+    background-color: #836FFF;
+    padding: 1% 0 1% 0;
+    margin-top: 30px;
+    color: #F0F3FF;
+    font-weight: 500;
+}
+
+@media (max-width: 800px) {
+
+    .cabecalho {
+        display: flex;
+        justify-content: center;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .conteudo-esquerda {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 50%;
+    }
+    
+    .conteudo-esquerda-textarea {
+        text-align: center;
+    }
+
+    .conteudo-direita {
+        width: 688px;
+        height: 133px;
+        padding: 20px;
+    }
+    
+}
+
+
+@media (max-width: 500px) {
+
+    .conteudo {
+        justify-content: space-around;
+    }
+
+   .conteudo-esquerda {
+    width: 100%;
+   }
+
+   .conteudo-esquerda-textarea {
+    height: 50%;
+
+   }
+
+   .conteudo-esquerda-botao-alerta {
+    width: 100%;
+   }
+
+   .conteudo-esquerda-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .conteudo-direita {
+        width: 80%;
+        height: 186px;
+        margin: 0;
+
+   }
+ }

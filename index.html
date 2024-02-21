@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Cripto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-img" src="assets/astrounautaheader.svg" alt="logo Astrounauta">
+    </header>
+    <main class="conteudo">
+        <section class="conteudo-esquerda">
+            <textarea id="input" class="conteudo-esquerda-textarea" placeholder="Digite seu texto"></textarea>
+
+            <div class="conteudo-esquerda-botao-alerta">
+                <div class="conteudo-esquerda-alerta"><p><img src="assets/alert.svg" alt="alert">Apenas letras minúsculas e sem acentos.</p></div>
+                <div class="conteudo-esquerda-botoes">
+                     <button onclick="criptografar()" class="conteudo-esquerda-btn-crip">Criptografar</button>
+                     <button onclick="descriptografar()" class="conteudo-esquerda-btn-descrip">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section class="conteudo-direita">
+            
+                <textarea id="conteudo-direita-text" class="conteudo-direita-text"></textarea>
+                <button onclick="copiarTexto()" id="conteudo-direita-btn-copiar" class="conteudo-direita-btn-copiar">Copiar</button>
+            
+                <img id="conteudo-direita-img" class="conteudo-direita-img" src="assets/astronauta.svg" alt="Cachorro Astrounauta 404">
+                <h1 id="conteudo-direita-h1" class="conteudo-direita-h1">Nenhuma mensagem encontrada</h1>
+                <p id="conteudo-direita-p" class="conteudo-direita-p">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="rodape-texto">Desenvolvido por Fernando Lima.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
